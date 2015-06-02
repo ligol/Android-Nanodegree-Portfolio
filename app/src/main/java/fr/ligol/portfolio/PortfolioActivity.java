@@ -8,7 +8,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
-public class Porfolio extends AppCompatActivity {
+public class PortfolioActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,7 +18,7 @@ public class Porfolio extends AppCompatActivity {
         findViewById(R.id.spotify_streamer).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(Porfolio.this, Porfolio.this.getString(R.string.toast_format_message, Porfolio.this.getString(R.string.spotify_streamer)), Toast.LENGTH_SHORT).show();
+                showToastMessage(R.string.spotify_streamer);
             }
         });
         findViewById(R.id.super_duo).setOnClickListener(new View.OnClickListener() {
@@ -48,7 +48,7 @@ public class Porfolio extends AppCompatActivity {
     }
 
     private void showToastMessage(@StringRes int stringId) {
-        Toast.makeText(Porfolio.this, Porfolio.this.getString(R.string.toast_format_message, Porfolio.this.getString(stringId)), Toast.LENGTH_SHORT).show();
+        Toast.makeText(PortfolioActivity.this, PortfolioActivity.this.getString(R.string.toast_format_message, PortfolioActivity.this.getString(stringId)), Toast.LENGTH_SHORT).show();
     }
 
     @Override
