@@ -1,0 +1,16 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="AppTheme.ProjectButton" parent="Base.Widget.AppCompat.Button">
+        <item name="android:padding">10dp</item>
+        <item name="android:background">@color/light_green_700</item>
+        <item name="android:layout_margin">10dp</item>
+    </style>
+    <style name="AppTheme.ProjectButtonCapstone" parent="AppTheme.ProjectButton">
+        <item name="android:background">@color/deep_orange_700</item>
+    </style>
+</resources>
